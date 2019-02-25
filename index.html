@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+
+
+        <div id="menu">
+            <i class="fas fa-code" id="butCreatList"></i>
+
+            <i class="fas fa-bold" id="bold"></i>
+            <i class="fas fa-italic" id="italic"></i>
+            <i class="fas fa-underline" id="underline"></i>
+            <i class="fas fa-strikethrough" id="lineThrough"></i>
+
+            <i class="fas fa-align-left" id="left"></i>
+            <i class="fas fa-align-justify" id="center"></i>
+            <i class="fas fa-align-right" id="right"></i>
+
+
+            <i class="fas fa-text-height" id="size"></i>
+            <i class="fas fa-font" id="font"></i>
+            <i class="fas fa-palette" id="palette"></i>
+            <i class="fas fa-image" id="butFaImg"></i>
+
+            <i class="fas fa-lock"></i>
+        </div>
+
+
+        <div id="creatList">
+            <i class="fas fa-save" id="save"></i>
+            <i class="fas fa-table" id="tableBut"></i>
+            <i class="fas fa-list-ul" id="ulBut"></i>
+            <i class="fas fa-list-ol" id="olBut"></i>
+        </div>
+    </header>
+    <main>
+
+
+        <section id="resaltWrapper">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </section>
+        <div id="fontFamily">
+            <div style="font-family: Geneva, Arial, Helvetica, sans-serif;">Arial</div>
+            <div style="font-family: Georgia, 'Times New Roman', Times, serif;">Georgia</div>
+            <div style="font-family: Impact, Haettenschweiler, Charcoal, sans-serif;">Impact</div>
+            <div style="font-family: Tahoma, Verdana, Segoe, sans-serif;">Tahoma</div>
+            <div style="font-family: TimesNewRoman, Times, Georgia, serif;">Times New Roman</div>
+            <div style="font-family: Verdana, Geneva, sans-serif;">Verdana</div>
+        </div>
+        <div id="fontSize">
+            <div style="font-size: 12px">12px</div>
+            <div style="font-size: 14px">14px</div>
+            <div style="font-size: 16px">16px</div>
+            <div style="font-size: 18px">18px</div>
+            <div style="font-size: 20px">20px</div>
+            <div style="font-size: 22px">22px</div>
+            <div style="font-size: 25px">25px</div>
+            <div style="font-size: 30px">30px</div>
+        </div>
+
+        <div id="signIn" style="display: none">
+            <div class="sign_in_top_box">
+                <h3>Sign In</h3>
+            </div>
+            <form action="" name="f1">
+                <input type="text" name="login" placeholder="   Login here...">
+                <input type="text" name="password" placeholder="   Password here...">
+                <button type="button" id="butSignIn">Sign in</button>
+            </form>
+        </div>
+
+
+        <div id="creatTable">
+            <div>
+
+                <span>Count TR:</span>
+                <input type="text" id="cTr" placeholder="   type here...">
+                <span>Width of TD:</span>
+                <input type="text" id="wTd" placeholder="   type here...">
+                <span style="margin-top: 30px">Width of border:</span>
+                <input type="text" id="bWdthTd" placeholder="   type here...">
+                <button type="button" id="resetTable">Reset</button>
+            </div>
+            <div>
+                <span>Count TD:</span>
+                <input type="text" id="cTd" placeholder="   type here...">
+                <span>Height of TD:</span>
+                <input type="text" id="hTd" placeholder="   type here...">
+                <div>
+                    <div>
+                        <span>Style of border:</span>
+                        <select id="styleOfBorder">
+                            <option value="dotted">dotted</option>
+                            <option value="dashed">dashed</option>
+                            <option value="solid">solid</option>
+                            <option value="double">double</option>
+                            <option value="groove">groove</option>
+                            <option value="initial">initial</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span>Color of border:</span>
+                        <select id="colorOfBorder">
+                            <option value="red">red</option>
+                            <option value="green">green</option>
+                            <option value="yellow">yellow</option>
+                            <option value="black">black</option>
+                            <option value="gold">gold</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="button" id="butCreateTable">Create table</button>
+            </div>
+        </div>
+
+
+        <textarea id="correctionText" style="display: none"></textarea>
+
+
+        <div id="creatListUl">
+            <span>Count li item:</span>
+            <input type="text" id="cLiUl" placeholder="   type here...">
+            <span>Type mark of list:</span>
+            <select name="TypeOfMarks" id="tMarksUl">
+                <option value="circle">circle</option>
+                <option value="disc">disc</option>
+                <option value="square">square</option>
+            </select>
+            <div>
+                <button type="button" id="resetUlList">Reset</button>
+                <button type="button" id="butCreateListUl">Create list</button>
+            </div>
+        </div>
+
+
+        <div id="creatListOl">
+            <span>Count li item:</span>
+            <input type="text" id="cLiOl" placeholder="   type here...">
+            <span>Type mark of list:</span>
+            <select name="TypeOfMarks" id="tMarksOl">
+                <option value="A">A</option>
+                <option value="I">I</option>
+                <option value="1">1</option>
+            </select>
+            <div>
+                <button type="button" id="resetOlList">Reset</button>
+                <button type="button" id="butCreateListOl">Create list</button>
+            </div>
+        </div>
+        <div id="textColors">
+            <div style="color: #00cc00; background-color:#00cc00"></div>
+            <div style="color:#009900 ; background-color:#009900"></div>
+            <div style="color:#009933 ; background-color:#009933"></div>
+            <div style="color:#669900 ; background-color:#669900"></div>
+            <div style="color:#99cc00 ; background-color:#99cc00"></div>
+            <div style="color:#cccc00 ; background-color:#cccc00"></div>
+            <div style="color:#cc9900 ; background-color:#cc9900"></div>
+            <div style="color:#cc6600 ; background-color:#cc6600"></div>
+            <div style="color:#ff3300; background-color:#ff3300"></div>
+            <div style="color:#ff5050 ; background-color:#ff5050"></div>
+            <div style="color: #ff3399; background-color:#ff3399"></div>
+            <div style="color:#ff00ff ; background-color:#ff00ff"></div>
+            <div style="color:#9966ff ; background-color:#9966ff"></div>
+            <div style="color: #6699ff; background-color:#6699ff"></div>
+            <div style="color:#0066ff ; background-color:#0066ff"></div>
+            <div style="color:#003399 ; background-color:#003399"></div>
+            <div style="color:#000066 ; background-color:#000066"></div>
+            <div style="color:#00001a ; background-color:#00001a"></div>
+            <div style="color: #000000; background-color:#000000"></div>
+            <div style="color: #595959; background-color:#595959"></div>
+            <div style="color: #cccccc; background-color:#cccccc"></div>
+        </div>
+
+        <div id="faImage">
+            <div class="faImage_type">
+                <div id="faImageColors">
+                    <p>Colors</p>
+                </div>
+                <div id="faImageImg">
+                    <p>Images</p>
+                </div>
+                <div id="faImageFiles">
+                    <p>Files</p>
+                </div>
+            </div>
+            <div id="bgColors">
+                <div style="color: #00cc00; background-color:#00cc00"></div>
+                <div style="color:#009900 ; background-color:#009900"></div>
+                <div style="color:#009933 ; background-color:#009933"></div>
+                <div style="color:#669900 ; background-color:#669900"></div>
+                <div style="color:#99cc00 ; background-color:#99cc00"></div>
+                <div style="color:#cccc00 ; background-color:#cccc00"></div>
+                <div style="color:#cc9900 ; background-color:#cc9900"></div>
+                <div style="color:#cc6600 ; background-color:#cc6600"></div>
+                <div style="color:#ff3300; background-color:#ff3300"></div>
+                <div style="color:#ff5050 ; background-color:#ff5050"></div>
+                <div style="color: #ff3399; background-color:#ff3399"></div>
+                <div style="color:#ff00ff ; background-color:#ff00ff"></div>
+                <div style="color:#9966ff ; background-color:#9966ff"></div>
+                <div style="color: #6699ff; background-color:#6699ff"></div>
+                <div style="color:#0066ff ; background-color:#0066ff"></div>
+                <div style="color:#003399 ; background-color:#003399"></div>
+                <div style="color:#000066 ; background-color:#000066"></div>
+                <div style="color:#00001a ; background-color:#00001a"></div>
+                <div style="color: #000000; background-color:#000000"></div>
+                <div style="color: #595959; background-color:#595959"></div>
+                <div style="color: #cccccc; background-color:#cccccc"></div>
+            </div>
+            <div id="bgImg">
+                <div style="background: url(img/1.jpg)"></div>
+                <div style="background: url(img/2.jpg)"></div>
+                <div style="background: url(img/3.jpg)"></div>
+                <div style="background: url(img/4.jpg)"></div>
+                <div style="background: url(img/5.jpg)"></div>
+                <div style="background: url(img/6.jpg)"></div>
+                <div style="background: url(img/7.jpg)"></div>
+                <div style="background: url(img/8.jpg)"></div>
+                <div style="background: url(img/9.jpg)"></div>
+            </div>
+            <div id="bgFiles">
+                <input type="file" multiple accept="image/jpeg, image/*" placeholder="   Choose file" id="inputFile">
+
+            </div>
+        </div>
+
+
+
+
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

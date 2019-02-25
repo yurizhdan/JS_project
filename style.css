@@ -1,0 +1,630 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+header {
+    background-color: darkgray;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    min-height: 900px
+}
+
+i {
+    font-size: 22px;
+    background-color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: 3px solid transparent
+}
+
+.fa-code {
+    margin-right: 15px
+}
+
+.fa-align-left,
+.fa-lock,
+
+.fa-text-height {
+    margin-left: 15px
+}
+
+.fa-italic,
+.fa-underline,
+.fa-align-justify,
+.fa-palette,
+.fa-font,
+.fa-table,
+.fa-list-ul {
+    border-radius: 0
+}
+
+.fa-bold,
+.fa-align-left,
+.fa-text-height,
+.fa-save {
+    border-radius: 5px 0px 0px 5px
+}
+
+.fa-strikethrough,
+.fa-align-right,
+.fa-image,
+.fa-list-ol {
+    border-radius: 0px 5px 5px 0px
+}
+
+.fa-italic:hover {
+    border-bottom: 3px solid grey;
+    border-top: 3px solid grey;
+    background-color: #a3a3a3
+}
+
+.fa-underline:hover {
+    border-bottom: 3px solid grey;
+    border-top: 3px solid grey;
+    background-color: #a3a3a3
+}
+
+.fa-align-justify:hover {
+    border-bottom: 3px solid grey;
+    border-top: 3px solid grey;
+    background-color: #a3a3a3
+}
+
+.fa-text-height:hover {
+    border: 3px solid grey;
+    border-right: 3px solid transparent;
+    background-color: #a3a3a3
+}
+
+.fa-save:hover {
+    border: 3px solid grey;
+    border-right: 3px solid transparent;
+    background-color: #a3a3a3
+}
+
+.fa-font:hover {
+    border-bottom: 3px solid grey;
+    border-top: 3px solid grey;
+    background-color: #a3a3a3
+}
+
+.fa-palette:hover {
+    border-bottom: 3px solid grey;
+    border-top: 3px solid grey;
+    background-color: #a3a3a3
+}
+
+.fa-table:hover {
+    border-bottom: 3px solid grey;
+    border-top: 3px solid grey;
+    background-color: #a3a3a3
+}
+
+.fa-list-ul:hover {
+    border-bottom: 3px solid grey;
+    border-top: 3px solid grey;
+    background-color: #a3a3a3
+}
+
+.fa-bold:hover {
+    border: 3px solid grey;
+    border-right: 3px solid transparent;
+    background-color: #a3a3a3
+}
+
+.fa-align-right:hover {
+    border: 3px solid grey;
+    border-left: 3px solid transparent;
+    background-color: #a3a3a3
+}
+
+.fa-align-left:hover {
+    border: 3px solid grey;
+    border-right: 3px solid transparent;
+    background-color: #a3a3a3
+}
+
+.fa-strikethrough:hover {
+    border: 3px solid grey;
+    border-left: 3px solid transparent;
+    background-color: #a3a3a3
+}
+
+.fa-image:hover {
+    border: 3px solid grey;
+    border-left: 3px solid transparent;
+    background-color: #a3a3a3
+}
+
+.fa-list-ol:hover {
+    border: 3px solid grey;
+    border-left: 3px solid transparent;
+    background-color: #a3a3a3
+}
+
+.fa-code:hover {
+    border: 3px solid grey;
+    background-color: #a3a3a3
+}
+
+.fa-lock:hover {
+    border: 3px solid grey;
+    background-color: #a3a3a3
+}
+
+#resaltWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 25px;
+    padding: 40px;
+    width: 100%;
+    min-height: 900px;
+}
+
+#resaltWrapper p {
+    margin: 5px
+}
+
+.bold {
+    font-weight: bold
+}
+
+.italic {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline
+}
+
+.line_through {
+    text-decoration: line-through
+}
+
+#signIn {
+    width: 300px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+    align-self: center;
+    border: 1px solid;
+    position: absolute;
+    top: 30px;
+    background-color: white
+}
+
+.sign_in_top_box {
+    border-bottom: 1px solid #a3a3a3;
+    text-align: center;
+    height: 50px;
+    padding: 10px;
+}
+
+#signIn form {
+    margin: 10px auto;
+}
+
+#signIn input {
+    margin: 10px 25px;
+    width: 250px;
+    height: 40px;
+}
+
+#butSignIn {
+    width: 250px;
+    height: 40px;
+    margin: 10px 25px;
+    background-color: #a3a3a3;
+    color: white
+}
+
+#creatList {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    display: none
+}
+
+#creatTable {
+    width: 600px;
+    height: auto;
+    position: absolute;
+    top: -10px;
+    left: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 10px auto;
+    border: 1px solid grey;
+    border-radius: 7px;
+    display: none;
+}
+
+#creatTable div {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+#creatTable span {
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+
+#creatTable input {
+    height: 30px;
+
+}
+
+#creatTable div div {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+}
+
+#creatTable div div div {
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+}
+
+#styleOfBorder {
+    margin-right: 10px;
+    height: 30px;
+}
+
+#colorOfBorder {
+    margin-left: 10px;
+    height: 33px;
+}
+
+#resetTable {
+    margin-top: 30px;
+    height: 40px;
+    background-color: red;
+    color: white;
+    border-radius: 7px;
+    font-size: 15px
+}
+
+#butCreateTable {
+    margin-top: 25px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border-radius: 7px;
+    font-size: 15px
+}
+
+
+#correctionText {
+    width: 900px;
+    height: 700px;
+    border: none;
+
+}
+
+#creatListUl {
+    width: 300px;
+    height: auto;
+    padding: 10px 30px;
+    position: absolute;
+    top: -10px;
+    left: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 10 auto;
+    border: 1px solid grey;
+    border-radius: 7px;
+    display: none;
+}
+
+#creatListUl span {
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+#creatListUl input,
+#creatListUl select {
+    height: 30px;
+}
+
+#creatListUl div {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+#resetUlList {
+    margin-top: 30px;
+    height: 40px;
+    width: 48%;
+    background-color: red;
+    color: white;
+    border-radius: 7px;
+    font-size: 15px
+}
+
+#butCreateListUl {
+    margin-top: 30px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border-radius: 7px;
+    font-size: 15px;
+    width: 48%;
+}
+
+#creatListOl {
+    width: 300px;
+    height: auto;
+    padding: 10px 30px;
+    position: absolute;
+    top: -10px;
+    left: 500px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 10 auto;
+    border: 1px solid grey;
+    border-radius: 7px;
+    display: none;
+}
+
+#creatListOl span {
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+#creatListOl input,
+#creatListOl select {
+    height: 30px;
+}
+
+#creatListOl div {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+#resetOlList {
+    margin-top: 30px;
+    height: 40px;
+    width: 48%;
+    background-color: red;
+    color: white;
+    border-radius: 7px;
+    font-size: 15px
+}
+
+#butCreateListOl {
+    margin-top: 30px;
+    height: 40px;
+    background-color: green;
+    color: white;
+    border-radius: 7px;
+    font-size: 15px;
+    width: 48%;
+}
+
+#textColors {
+    width: 488px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 3px solid #cccccc;
+    background-color: white;
+    position: absolute;
+    left: 550px;
+    display: none
+}
+
+#textColors div {
+    height: 60px;
+    width: 60px;
+    margin: 3px;
+    border-radius: 4px;
+}
+
+.hide {
+    display: flex !important;
+}
+
+
+#faImage {
+    width: 488px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: absolute;
+    left: 550px;
+    border: 3px solid #cccccc;
+    background-color: white;
+    padding-top: 10px;
+    border-radius: 7px;
+    display: none
+}
+
+#bgColors {
+    width: 488px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#bgColors div {
+    height: 60px;
+    width: 60px;
+    margin: 3px;
+    border-radius: 4px;
+}
+
+.faImage_type{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.faImage_type div{
+    width: 15%;
+    text-align: center;
+    padding-top: 10px;
+    border-radius: 2px;
+    color: #404040
+    
+}
+
+#faImageColors{
+    border: 2px solid grey;
+    border-bottom: none;
+    color: #9999ff
+}
+
+#faImageImg{
+    border-bottom: 2px solid grey
+}
+
+#faImageFiles{
+    border-bottom: 2px solid grey
+}
+
+
+#bgImg {
+    width: 488px;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: none
+}
+
+#bgImg div {
+    height: 60px;
+    width: 30%;
+    margin: 3px;
+    border-radius: 4px;
+    background-repeat: no-repeat;
+    background-size:  cover;
+}
+
+#bgFiles{
+    display: none
+}
+
+#bgFiles input{
+    height: 60px;
+    width: 200px;
+    margin-left: 30px;
+    margin-top: 30px
+}
+#bgFiles button{
+    height: 40px;
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 7px;
+    background-color: grey;
+    color: white
+}
+
+
+#fontFamily{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 160px;
+    width: 175px;
+    top: -28px;
+    left:700px;
+    padding: 10px 0;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+    position: absolute;
+    display: none
+}
+
+#fontFamily  div:hover{
+    background-color: lightgrey
+}
+
+#fontSize{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 210px;
+    width: 135px;
+    top: -28px;
+    left:700px;
+    padding: 10px 0;
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 7px;
+    position: absolute;
+    display: none
+}
+
+#fontSize  div:hover{
+    background-color: lightgrey
+}
+
+
+#fontSize div{
+    font-size: 20px!important
+}
+
+
+
+
+
+
+
+
